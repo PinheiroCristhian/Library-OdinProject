@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+</head>
+<body>
+    <div class="btn-div">
+        <button class="add-book-btn">Adicionar Livro</button>
+    </div>
+    <div class="container">
+        <form>
+            <div class="close-form-div">
+                <span class="close-form-btn"><i class=" fa-solid fa-x"></i></span>
+            </div>
+            <div class="input-div">
+                <label for="book-title">Nome do Livro</label>
+                <input type="text" id="book-title" required>
+            </div>
+            <div class="input-div">
+                <label for="book-author">Nome do Autor</label>
+                <input type="text" id="book-author" required>
+            </div>
+            <div class="input-div">
+                <label for="book-pages">Quantas Páginas?</label>
+                <input type="number" id="book-pages" required>
+            </div>
+            <div class="input-div">
+                <label for="haveRead">Já leu?</label>
+                <select name="jaLeu" id="haveRead">
+                    <option value="yes">Sim</option>
+                    <option value="no">Não</option>
+                </select>
+            </div>
+            <button type="button" id="submit-btn">Adicionar Livro</button>
+        </form>
+        <div class="books-cointainer clearfix">
+            <!--<div class="book">
+                <p class="book-name">The Hobbit</p>
+                <p class="book-author-name">J. R. R. Tolkien</p>
+                <p class="book-pages">311 Pages</p>
+                <p class="haveReadBook">Have you read it? Yes</p>
+                <span class="remove-book-btn fa-solid fa-trash"></span>
+            </div>!-->
+        </div>    
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
